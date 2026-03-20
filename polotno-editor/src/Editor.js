@@ -101,7 +101,7 @@ export const Editor = () => {
                 style={{
                 position: 'fixed',
                 top: 60,
-                right: 120, // 👈 shift left from extreme edge
+                right: 120,
                 zIndex: 9999,
                 background: 'white',
                 padding: '8px',
