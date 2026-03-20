@@ -69,6 +69,8 @@ The goal is not to explain every feature of Polotno, but to give you a clear, li
       - [Backend Stores the File](#backend-stores-the-file)
       - [Load the asset into the editor](#load-the-asset-into-the-editor)
       - [Add Image](#add-image)
+  - [Conclusion](#conclusion)
+  - [Next steps](#next-steps)
   
 ---
 
@@ -788,4 +790,44 @@ To verify this step:
 
 You will be able to see that, a thord child element, `image` has been added in the JSON output, with it's unique ID, and image source URL, identical to the one you provided in your code. 
 
-![IImage with SRC](../images/image-with-src.png)
+![Image with SRC](../images/image-with-src.png)
+
+---
+
+## Conclusion
+
+You now have a working Polotno integration inside a React application.
+
+In this guide, you:
+- Rendered the editor using your API key
+- Loaded a design using JSON state
+- Exported designs as images or PDFs
+- Saved design state for future editing
+- Understood how assets are handled via external storage
+
+At this point, you have a complete end-to-end flow:
+`Editor → Design JSON → Backend → Reload → Export`
+
+This is the core foundation behind most real-world design editors built with Polotno.
+
+---
+
+## Next steps
+
+Once this basic setup is working, most applications extend it with additional capabilities:
+
+**Template libraries** →
+Provide users with predefined designs they can select and customize
+
+**Asset management systems** →
+Allow users to upload, organize, and reuse images, logos, and media
+
+**Backend-driven design loading** →
+Store multiple designs per user and load them dynamically
+
+**Production export pipelines** →
+Move exports to backend services for batch processing or automation
+
+These features build directly on top of the same concepts covered in this guide—design JSON, asset URLs, and programmatic exports.
+
+Start by integrating one of these based on your product’s needs, and iterate from there.
