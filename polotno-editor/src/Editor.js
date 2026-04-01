@@ -11,7 +11,7 @@ import '@blueprintjs/core/lib/css/blueprint.css';
 import { createStore } from 'polotno/model/store';
 
 const store = createStore({
-  key: 'MwhOw1b2N-3qa9JC0E2L', // you can create it here: https://polotno.com/cabinet/
+  key: 'YOUR_API_KEY', // you can create it here: https://polotno.com/cabinet/
   // you can hide back-link on a paid license
   // but it will be good if you can keep it for Polotno project support
   showCredit: true,
